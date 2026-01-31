@@ -1,0 +1,6 @@
+replicas: 1
+image:
+  repository: "{{ .Values.ecrRepo }}"  
+  tag: "{{ .Values.tag }}"  
+port: 3000  
+serviceType: ClusterIP  
